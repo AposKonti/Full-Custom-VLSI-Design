@@ -1,0 +1,14 @@
+# Legend: N(newborn) R(running) F(failed) K(killed) C(complete)
+C leakage_power__ACQ_1 of XOR T0 W1
+C Cin__VSS__hl__ACQ_1 of XOR T1 W1
+C Cin__VSS__lh__ACQ_1 of XOR T2 W1
+C delay__IN1__hl__OUT__hl__ACQ_1 of XOR T3 W1
+C delay__IN1__hl__OUT__lh__ACQ_1 of XOR T4 W1
+C delay__IN1__lh__OUT__hl__ACQ_1 of XOR T5 W1
+C delay__IN1__lh__OUT__lh__ACQ_1 of XOR T6 W1
+C Cin__VDD__hl__ACQ_1 of XOR T7 W1
+C Cin__VDD__lh__ACQ_1 of XOR T8 W1
+C delay__IN2__hl__OUT__hl__ACQ_1 of XOR T9 W1
+C delay__IN2__hl__OUT__lh__ACQ_1 of XOR T10 W1
+C delay__IN2__lh__OUT__hl__ACQ_1 of XOR T11 W1
+C delay__IN2__lh__OUT__lh__ACQ_1 of XOR T12 W1

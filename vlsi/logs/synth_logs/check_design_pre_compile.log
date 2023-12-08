@@ -1,0 +1,21 @@
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP1
+Date:        Fri Dec  1 16:26:19 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               4
+    Cells do not drive (LINT-1)                                     2
+    Connected to power or ground (LINT-32)                          2
+--------------------------------------------------------------------------------
+
+Warning: In design 'matrix_add_sub_word_size8_Amatrixrownum2_Amatrixcolnum2_Bmatrixrownum2_Bmatrixcolnum2', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'matrix_add_sub_word_size8_Amatrixrownum2_Amatrixcolnum2_Bmatrixrownum2_Bmatrixcolnum2', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'matrix_alu', a pin on submodule 'mat_add' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op' is connected to logic 0. 
+Warning: In design 'matrix_alu', a pin on submodule 'mat_sub' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op' is connected to logic 1. 
+1

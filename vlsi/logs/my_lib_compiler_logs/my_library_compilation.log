@@ -1,0 +1,43 @@
+
+                             Library Compiler (TM)
+                                 DesignWare (R)
+
+               Version L-2016.06-SP1 for linux64 - Jul 12, 2016 
+
+                    Copyright (c) 1988 - 2016 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+Initializing...
+set WORKSPACE           [getenv WORKSPACE]
+/home/eng/a/axk220238
+set my_lib_cells        [getenv my_lib_cells]
+/home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/my_lib_cells.lib
+set my_lib_ff           [getenv my_lib_ff]
+/home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/my_ff.lib
+set VIRTUOSO_LIB_NAME   [getenv VIRTUOSO_LIB_NAME]
+axk220238_axk230133
+read_lib ${my_lib_cells}
+Reading '/home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/my_lib_cells.lib' ...
+Warning: Line 11, The default_operating_conditions is not defined. operating_conditions 'axk220238_axk230133' is set
+	as the default_operating_conditions. (LBDB-663)
+Technology library 'axk220238_axk230133' read successfully
+1
+write_lib ${VIRTUOSO_LIB_NAME} -format db -output ${WORKSPACE}/vlsi/lib/my_lib_cells.db
+Wrote the 'axk220238_axk230133' library to '/home/eng/a/axk220238/vlsi/lib/my_lib_cells.db' successfully
+1
+read_lib ${my_lib_ff}
+Reading '/home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/my_ff.lib' ...
+Warning: Line 11, The default_operating_conditions is not defined. operating_conditions 'axk220238_axk230133' is set
+	as the default_operating_conditions. (LBDB-663)
+Warning: Overwriting an old technology library '/home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/axk220238_axk230133.db' file with a new one. (UIL-2)
+1
+write_lib ${VIRTUOSO_LIB_NAME} -format db -output ${WORKSPACE}/vlsi/lib/my_lib_ff.db
+Wrote the 'axk220238_axk230133' library to '/home/eng/a/axk220238/vlsi/lib/my_lib_ff.db' successfully
+1
+exitMemory usage for this session 19 Mbytes.
+CPU usage for this session 0 seconds ( 0.00 hours ).
+
+Thank you...

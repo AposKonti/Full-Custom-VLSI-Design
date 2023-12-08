@@ -1,0 +1,11 @@
+AREA = height * width: top of VDD to bottom of GND, horizontal distance: JX/ JZ/ prboundary to JX/ JZ/ proboundary
+AND:    4.238 * 1.304 = 5.526352
+AOI21:  4.238 * 1.304 = 5.526352
+AOI22:  4.238 * 1.630 = 6.90794
+INV:    4.238 * 0.652 = 2.821856
+NAND:   4.238 * 0.978 = 4.144764
+NOR:    4.238 * 0.978 = 4.144764
+OR:     4.238 * 1.304 = 5.526352
+XOR:    4.238 * 1.956 = 8.289528
+XNOR:   4.238 * 1.956 = 8.289528
+DFF_n:	4.238 * 5.542 = 24.17779

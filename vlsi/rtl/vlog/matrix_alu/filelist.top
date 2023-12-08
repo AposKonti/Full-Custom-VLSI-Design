@@ -1,0 +1,4 @@
+${WORKSPACE}/vlsi/rtl/vlog/matrix_alu/matrix_add_sub.v
+${WORKSPACE}/vlsi/rtl/vlog/matrix_alu/matrix_mul.v
+${WORKSPACE}/vlsi/rtl/vlog/matrix_alu/matrix_kronecker.v
+${WORKSPACE}/vlsi/rtl/vlog/matrix_alu/matrix_alu.v

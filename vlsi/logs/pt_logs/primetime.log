@@ -1,0 +1,260 @@
+
+                                 PrimeTime (R)
+
+               Version O-2018.06-SP1 for linux64 - Jul 19, 2018 
+
+                    Copyright (c) 1988 - 2018 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+#### To be used for VLSI design course work only
+#### Xiangyu Xu
+set WORKSPACE	        [getenv WORKSPACE]
+/home/eng/a/axk220238
+set search_path	        [getenv PT_PATH]
+/home/eng/a/axk220238/vlsi/cad/primetime
+set library_file1	    [getenv PT_LIBRARY1]
+/home/eng/a/axk220238/vlsi/cad/primetime/my_lib_cells.db
+set library_file2	    [getenv PT_LIBRARY2]
+/home/eng/a/axk220238/vlsi/cad/primetime/my_lib_ff.db
+set verilog_file        [getenv PT_VERILOG]
+/home/eng/a/axk220238/vlsi/cad/primetime/matrix_alu_netlist.v
+set driving_cell        [getenv PT_DRIVING_CELL]
+INV
+set clock_pin_name      [getenv PT_CLK_NAME]
+clk
+set clock_period        [getenv PT_CLK_PERIOD]
+2.25
+set input_transition    [getenv PT_INPUT_TRANSITION]
+0.060
+set load                [getenv PT_LOAD]
+0.07
+set reset_pin_name      [getenv PT_RESET_NAME]
+resetn
+###############################################################
+# Define search path verilog file and library and variables
+###############################################################
+set search_path ${search_path}
+/home/eng/a/axk220238/vlsi/cad/primetime
+#source variables1
+###############################################################
+# link library
+###############################################################
+set link_library [list $library_file1 $library_file2]
+/home/eng/a/axk220238/vlsi/cad/primetime/my_lib_cells.db /home/eng/a/axk220238/vlsi/cad/primetime/my_lib_ff.db
+set target_library $link_library
+/home/eng/a/axk220238/vlsi/cad/primetime/my_lib_cells.db /home/eng/a/axk220238/vlsi/cad/primetime/my_lib_ff.db
+#set link_library [list $library_file ]
+#set target_library [list $library_file ]
+###############################################################
+# link design
+###############################################################
+#remove_design -all
+read_verilog $verilog_file
+1
+###############################################################
+# Define IO parameters
+###############################################################
+set_driving_cell -lib_cell $driving_cell -input_transition_rise $input_transition -input_transition_fall $input_transition [all_inputs]
+Loading verilog file '/home/eng/a/axk220238/vlsi/cad/primetime/matrix_alu_netlist.v'
+Loading db file '/home/eng/a/axk220238/vlsi/cad/primetime/my_lib_cells.db'
+Loading db file '/home/eng/a/axk220238/vlsi/cad/primetime/my_lib_ff.db'
+Linking design matrix_alu...
+Information: 1 (11.11%) library cells are unused in library axk220238_axk230133..... (LNK-045)
+Information: total 1 library cells are unused (LNK-046)
+1
+set_load $load [all_outputs]
+1
+###############################################################
+###############################################################
+#define the clock - for comb circuit we may not need to use any clock
+###############################################################
+create_clock -name clk -period $clock_period [get_ports $clock_pin_name]
+1
+set_clock_transition -rise -max $input_transition [get_clocks clk]
+1
+set_clock_transition -fall -max $input_transition [get_clocks clk]
+1
+###############################################################
+# set condition
+###############################################################
+set timing_slew_propagation_mode worst_slew
+worst_slew
+set timing_report_unconstrained_paths true
+true
+set power_enable_analysis true
+Information: Checked out license 'PrimePower' (PT-019)
+true
+set_disable_timing [get_ports $reset_pin_name]
+1
+set mindelayin [expr 0.15*$clock_period]
+0.3375
+set maxdelayin [expr 0.25*$clock_period]
+0.5625
+set_input_delay -clock [get_clocks clk] -add -min ${mindelayin} [all_inputs]
+Warning: Setting input delay on clock port (clk) relative to a clock (clk) defined at the same port. Command is ignored. (UITE-489)
+1
+set_input_delay -clock [get_clocks clk] -add -max ${maxdelayin} [all_inputs]
+Warning: Setting input delay on clock port (clk) relative to a clock (clk) defined at the same port. Command is ignored. (UITE-489)
+1
+set_input_transition $input_transition [all_inputs]
+1
+set maxdelayout [expr 0.25*$clock_period]
+0.5625
+set mindelayout [expr 0.15*$clock_period]
+0.3375
+set_output_delay -clock [get_clocks clk] -add -min ${mindelayout} [all_outputs]
+1
+set_output_delay -clock [get_clocks clk] -add -max ${maxdelayout} [all_outputs]
+1
+###############################################################
+# analyze delay and power
+###############################################################
+check_timing
+Information: Checking 'no_input_delay'.
+Information: Checking 'no_driving_cell'.
+Information: Checking 'unconstrained_endpoints'.
+Information: Checking 'unexpandable_clocks'.
+Information: Checking 'latch_fanout'.
+Information: Checking 'no_clock'.
+Information: Checking 'partial_input_delay'.
+Information: Checking 'generic'.
+Information: Checking 'loops'.
+Information: Checking 'generated_clocks'.
+Information: Checking 'pulse_clock_non_pulse_clock_merge'.
+Information: Checking 'pll_configuration'.
+check_timing succeeded.
+1
+update_timing
+1
+report_timing
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : matrix_alu
+Version: O-2018.06-SP1
+Date   : Tue Dec  5 18:36:50 2023
+****************************************
+
+
+  Startpoint: A[8] (input port clocked by clk)
+  Endpoint: C_reg_reg[7]
+               (falling edge-triggered flip-flop clocked by clk')
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.56       0.56 r
+  A[8] (in)                                               0.00       0.56 r
+  mat_mul/dp_cluster_1/mult_37_G2_G2/AN1_0/OUT (INV)      0.07       0.63 f
+  mat_mul/dp_cluster_1/mult_37_G2_G2/AN1_0_2/OUT (NOR)
+                                                          0.10       0.73 r
+  U739/OUT (XOR)                                          0.08       0.80 f
+  U338/OUT (AOI22)                                        0.09       0.90 r
+  U1217/OUT (INV)                                         0.04       0.94 f
+  U2311/OUT (OR)                                          0.08       1.01 f
+  U339/OUT (AOI22)                                        0.07       1.08 r
+  U1218/OUT (INV)                                         0.04       1.12 f
+  U2312/OUT (OR)                                          0.08       1.20 f
+  U340/OUT (AOI22)                                        0.07       1.26 r
+  U1219/OUT (INV)                                         0.04       1.30 f
+  U2313/OUT (OR)                                          0.08       1.38 f
+  U341/OUT (AOI22)                                        0.07       1.45 r
+  U1220/OUT (INV)                                         0.04       1.49 f
+  U2314/OUT (OR)                                          0.08       1.56 f
+  U342/OUT (AOI22)                                        0.05       1.62 r
+  U2357/OUT (XNOR)                                        0.07       1.69 r
+  U1729/OUT (XOR)                                         0.09       1.78 r
+  U742/OUT (XOR)                                          0.09       1.86 r
+  U2358/OUT (XNOR)                                        0.08       1.95 r
+  U1025/OUT (XOR)                                         0.08       2.03 r
+  U169/OUT (AOI22)                                        0.06       2.09 f
+  U167/OUT (NAND)                                         0.06       2.15 r
+  C_reg_reg[7]/D (DFF)                                    0.00       2.15 r
+  data arrival time                                                  2.15
+
+  clock clk' (fall edge)                                  2.25       2.25
+  clock network delay (ideal)                             0.00       2.25
+  clock reconvergence pessimism                           0.00       2.25
+  C_reg_reg[7]/CLK (DFF)                                             2.25 f
+  library setup time                                     -0.03       2.22
+  data required time                                                 2.22
+  ------------------------------------------------------------------------------
+  data required time                                                 2.22
+  data arrival time                                                 -2.15
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+1
+#report_timing -transition_time -delay min_max -capacitance -input_pins
+update_power
+Warning: Neither event file or switching activity data present for power estimation. The command will propagate switching activity values for power calculation.  (PWR-246)
+Information: Running switching activity propagation with 4 threads!
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
+1
+report_power 
+****************************************
+Report : Averaged Power
+Design : matrix_alu
+Version: O-2018.06-SP1
+Date   : Tue Dec  5 18:36:51 2023
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network           1.824e-06 1.931e-04 1.596e-11 1.949e-04 ( 6.72%)  i
+register                1.124e-04 2.319e-04 1.832e-08 3.443e-04 (11.87%)  
+combinational           1.188e-03 1.173e-03 1.422e-07 2.361e-03 (81.41%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 1.598e-03   (55.09%)
+  Cell Internal Power  = 1.302e-03   (44.90%)
+  Cell Leakage Power   = 1.605e-07   ( 0.01%)
+                         ---------
+Total Power            = 2.900e-03  (100.00%)
+
+1
+exitInformation: Defining new variable 'driving_cell'. (CMD-041)
+Information: Defining new variable 'mindelayout'. (CMD-041)
+Information: Defining new variable 'verilog_file'. (CMD-041)
+Information: Defining new variable 'mindelayin'. (CMD-041)
+Information: Defining new variable 'input_transition'. (CMD-041)
+Information: Defining new variable 'timing_slew_propagation_mode'. (CMD-041)
+Information: Defining new variable 'library_file1'. (CMD-041)
+Information: Defining new variable 'library_file2'. (CMD-041)
+Information: Defining new variable 'maxdelayin'. (CMD-041)
+Information: Defining new variable 'clock_period'. (CMD-041)
+Information: Defining new variable 'WORKSPACE'. (CMD-041)
+Information: Defining new variable 'load'. (CMD-041)
+Information: Defining new variable 'reset_pin_name'. (CMD-041)
+Information: Defining new variable 'maxdelayout'. (CMD-041)
+Information: Defining new variable 'clock_pin_name'. (CMD-041)
+
+Timing updates: 1 (1 implicit, 0 explicit) (0 incremental, 1 full, 0 logical)
+Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
+Maximum memory usage for this session: 904.10 MB
+CPU usage for this session: 5 seconds 
+Elapsed time for this session: 3 seconds
+Diagnostics summary: 3 warnings, 20 informationals
+
+Thank you for using pt_shell!

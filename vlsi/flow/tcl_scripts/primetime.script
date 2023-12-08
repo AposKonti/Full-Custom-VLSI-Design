@@ -1,0 +1,83 @@
+#### To be used for VLSI design course work only
+#### Xiangyu Xu
+
+set WORKSPACE	        [getenv WORKSPACE]
+set search_path	        [getenv PT_PATH]
+set library_file1	    [getenv PT_LIBRARY1]
+set library_file2	    [getenv PT_LIBRARY2]
+set verilog_file        [getenv PT_VERILOG]
+set driving_cell        [getenv PT_DRIVING_CELL]
+set clock_pin_name      [getenv PT_CLK_NAME]
+set clock_period        [getenv PT_CLK_PERIOD]
+set input_transition    [getenv PT_INPUT_TRANSITION]
+set load                [getenv PT_LOAD]
+set reset_pin_name      [getenv PT_RESET_NAME]
+
+###############################################################
+# Define search path verilog file and library and variables
+###############################################################
+
+set search_path ${search_path}
+#source variables1
+
+###############################################################
+# link library
+###############################################################
+
+set link_library [list $library_file1 $library_file2]
+set target_library $link_library
+#set link_library [list $library_file ]
+#set target_library [list $library_file ]
+
+###############################################################
+# link design
+###############################################################
+
+#remove_design -all
+read_verilog $verilog_file
+
+###############################################################
+# Define IO parameters
+###############################################################
+
+set_driving_cell -lib_cell $driving_cell -input_transition_rise $input_transition -input_transition_fall $input_transition [all_inputs]
+set_load $load [all_outputs]
+
+###############################################################
+
+###############################################################
+#define the clock - for comb circuit we may not need to use any clock
+###############################################################
+create_clock -name clk -period $clock_period [get_ports $clock_pin_name]
+set_clock_transition -rise -max $input_transition [get_clocks clk]
+set_clock_transition -fall -max $input_transition [get_clocks clk]
+###############################################################
+# set condition
+###############################################################
+set timing_slew_propagation_mode worst_slew
+set timing_report_unconstrained_paths true
+set power_enable_analysis true
+set_disable_timing [get_ports $reset_pin_name]
+
+set mindelayin [expr 0.15*$clock_period]
+set maxdelayin [expr 0.25*$clock_period]
+set_input_delay -clock [get_clocks clk] -add -min ${mindelayin} [all_inputs]
+set_input_delay -clock [get_clocks clk] -add -max ${maxdelayin} [all_inputs]
+set_input_transition $input_transition [all_inputs]
+
+set maxdelayout [expr 0.25*$clock_period]
+set mindelayout [expr 0.15*$clock_period]
+set_output_delay -clock [get_clocks clk] -add -min ${mindelayout} [all_outputs]
+set_output_delay -clock [get_clocks clk] -add -max ${maxdelayout} [all_outputs]
+
+###############################################################
+# analyze delay and power
+###############################################################
+check_timing
+update_timing
+report_timing
+#report_timing -transition_time -delay min_max -capacitance -input_pins
+update_power
+report_power 
+
+exit

@@ -1,0 +1,1014 @@
+ ****** HSPICE -- O-2018.09-2 linux64 (Oct 18 2018) ******                      
+  Copyright (c) 1986 - 2023 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: deck.cir                                                          
+  Command line options: /proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/linux64/hspice deck.cir -o deck -SIS-cchar  
+
+  **info**  the obsolete option acct is ignored
+  **info**  the obsolete option nopage is ignored
+ **info** *pvaI* current limit stacksize=8388608, set new limit stacksize=62914560
+
+ **info** *pvaI* Module (mosvarcap): 2 unexpanded port, 0 init, 85 behav, 5 contrib, 53/76 expr(s)
+
+ **info** *pvaI*        No DIS, 0/0 afCount, 0 MT, dlg, IO(0/0/0/0)
+
+ **info** *pvaI*        0 gmdIsThreadSafe 
+
+ **info** *pvaI*        0 const-G and 0 const-C, No switchBranch, 22 bypassOpt, 0 bus2scalar, 0 vwb
+
+ **info** *pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+
+ **warning** *pvaW*        variable 'fs_init' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./ncap.va:83)
+
+ **warning** *pvaW*                   To relax this rule, use 'setenv PVA_KEEP_VARS 1' to keep variables for probing.
+
+ **warning** *pvaW*        variable 'fp_init' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./ncap.va:159)
+
+ **warning** *pvaW*        variable 'ilast' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./ncap.va:149)
+
+ **warning** *pvaW*        variable 'jlast' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./ncap.va:204)
+
+ **info** *pvaI*        generated 3 flow node(s) during compilation.
+
+ **info** *pvaI* Module (dgmosvarcap): 2 unexpanded port, 0 init, 84 behav, 4 contrib, 53/76 expr(s)
+
+ **info** *pvaI*        No DIS, 0/0 afCount, 0 MT, dlg, IO(0/0/0/0)
+
+ **info** *pvaI*        0 gmdIsThreadSafe 
+
+ **info** *pvaI*        0 const-G and 0 const-C, No switchBranch, 22 bypassOpt, 0 bus2scalar, 0 vwb
+
+ **info** *pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+
+ **warning** *pvaW*        variable 'fs_init' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./dgncap.va:83)
+
+ **warning** *pvaW*        variable 'fp_init' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./dgncap.va:159)
+
+ **warning** *pvaW*        variable 'ilast' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./dgncap.va:149)
+
+ **warning** *pvaW*        variable 'jlast' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./dgncap.va:204)
+
+ **warning** *pvaW*        variable 'leak' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./dgncap.va:74)
+
+ **info** *pvaI*        generated 3 flow node(s) during compilation.
+
+ **info** *pvaI* Module (veripcap): 2 unexpanded port, 0 init, 86 behav, 5 contrib, 53/77 expr(s)
+
+ **info** *pvaI*        No DIS, 0/0 afCount, 0 MT, dlg, IO(0/0/0/0)
+
+ **info** *pvaI*        0 gmdIsThreadSafe 
+
+ **info** *pvaI*        0 const-G and 0 const-C, No switchBranch, 22 bypassOpt, 0 bus2scalar, 0 vwb
+
+ **info** *pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+
+ **warning** *pvaW*        variable 'fs_init' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./pcap.va:87)
+
+ **warning** *pvaW*        variable 'fp_init' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./pcap.va:163)
+
+ **warning** *pvaW*        variable 'ilast' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./pcap.va:153)
+
+ **warning** *pvaW*        variable 'jlast' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./pcap.va:208)
+
+ **info** *pvaI*        generated 3 flow node(s) during compilation.
+
+ **info** *pvaI* Module (havarcap): 2 unexpanded port, 0 init, 41 behav, 1 contrib, 28/38 expr(s)
+
+ **info** *pvaI*        Has DIS(DT), 0/0 afCount, 0 MT, dlg, IO(0/0/1/0)
+
+ **info** *pvaI*        0 gmdIsThreadSafe (DT)
+
+ **info** *pvaI*        1 const-G and 0 const-C, No switchBranch, 22 bypassOpt, 0 bus2scalar, 0 vwb
+
+ **info** *pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+
+ **info** *pvaI*        generated 0 flow node(s) during compilation.
+
+ **info** *pvaI* Module (It2_monitor): 2 unexpanded port, 0 init, 5 behav, 1 contrib, 22/1 expr(s)
+
+ **info** *pvaI*        Has DIS(SB), 0/0 afCount, 0 MT, dlg, IO(0/1/1/1)
+
+ **info** *pvaI*        0 gmdIsThreadSafe (SB)
+
+ **info** *pvaI*        0 const-G and 0 const-C, Has switchBranch, 22 bypassOpt, 0 bus2scalar, 0 vwb
+
+ **info** *pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+
+ **info** *pvaI*        generated 0 flow node(s) during compilation.
+
+ **info** *pvaI* Module (single_rcline): 3 unexpanded port, 0 init, 1473 behav, 5 contrib, 47/1727 expr(s)
+
+ **info** *pvaI* p.89 (LRM 2.2) parameter 'th' used inside analog function (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/single_rcline.va:1044)
+
+ **info** *pvaI*        Has DIS(DT ST), 3/11 afCount, 0 MT, dlg, IO(0/0/1/0)
+
+ **info** *pvaI*        0 gmdIsThreadSafe (DT ST)
+
+ **info** *pvaI*        3 const-G and 0 const-C, No switchBranch, 22 bypassOpt, 0 bus2scalar, 0 vwb
+
+ **info** *pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+
+ **info** *pvaI*        generated 0 flow node(s) during compilation.
+
+ **info** *pvaI* Module (single_cpw): 3 unexpanded port, 0 init, 1795 behav, 40 contrib, 72/2265 expr(s)
+
+ **info** *pvaI* p.89 (LRM 2.2) parameter 'th' used inside analog function (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/single_cpw.va:1130)
+
+ **info** *pvaI*        Has DIS(DT IT ST), 17/40 afCount, 0 MT, dlg, IO(0/0/1/0)
+
+ **info** *pvaI*        0 gmdIsThreadSafe (DT IT ST)
+
+ **info** *pvaI*        0 const-G and 0 const-C, No switchBranch, 0 bypassOpt, 0 bus2scalar, 0 vwb
+
+ **info** *pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+
+ **warning** *pvaW*        variable 'Coxo_None' declared but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/single_cpw.va:178)
+
+ **info** *pvaI*        generated 3 flow node(s) during compilation.
+
+ **info** *pvaI* Module (coupled_rcline): 5 unexpanded port, 0 init, 1778 behav, 13 contrib, 65/2017 expr(s)
+
+ **info** *pvaI* p.89 (LRM 2.2) parameter 'th' used inside analog function (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/coupled_rcline.va:1094)
+
+ **info** *pvaI*        Has DIS(ST), 5/10 afCount, 0 MT, dlg, IO(0/0/1/0)
+
+ **info** *pvaI*        0 gmdIsThreadSafe (ST)
+
+ **info** *pvaI*        0 const-G and 0 const-C, No switchBranch, 22 bypassOpt, 0 bus2scalar, 0 vwb
+
+ **info** *pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+
+ **info** *pvaI*        generated 0 flow node(s) during compilation.
+
+ **info** *pvaI* Module (coupled_cpw): 5 unexpanded port, 0 init, 2364 behav, 90 contrib, 70/2827 expr(s)
+
+ **info** *pvaI* p.89 (LRM 2.2) parameter 'th' used inside analog function (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/coupled_cpw.va:1205)
+
+ **info** *pvaI* p.89 (LRM 2.2) parameter 'd' used inside analog function (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/coupled_cpw.va:1918)
+
+ **info** *pvaI*        Has DIS(DT IT ST), 14/31 afCount, 0 MT, dlg, IO(0/0/1/0)
+
+ **info** *pvaI*        0 gmdIsThreadSafe (DT IT ST)
+
+ **info** *pvaI*        0 const-G and 0 const-C, No switchBranch, 0 bypassOpt, 0 bus2scalar, 0 vwb
+
+ **info** *pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+
+ **warning** *pvaW*        variable 'M0' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/coupled_cpw.va:2344)
+
+ **info** *pvaI*        generated 6 flow node(s) during compilation.
+
+ **info** *pvaI* #### Total 4247 line-size(s), 463/9104 expr(s), 164 contr(s), 0 init(s), 7711 behav(s), 26 port(s)
+
+  **warning** (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./nfet.inc:222) Model nfet device geometries will not be checked against the limits set by lmin, lmax, wmin and wmax. To enable this check, add a period(.) to the model name(i.e. enable model selector).
+  **warning** (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./pfet.inc:222) Model pfet device geometries will not be checked against the limits set by lmin, lmax, wmin and wmax. To enable this check, add a period(.) to the model name(i.e. enable model selector).
+  **info**  the obsolete option acct is ignored
+  **info**  the obsolete option nopage is ignored
+
+ **info** IF-.ELSE condition won’t be re-calculated for each data/parameter sweep. If .data/sweep parameter assignments are used in .if condition, please use .alter as a workaround.
+
+ Loading pVA library deck.pvadir/pvaRTL_linux64.so...
+  **warning** multiple output options specified, using post
+  
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 5         bypass  = 2.0000000  
+  **info** multiple results used in passfail
+ End of pVA setup    on Thu Nov 30 18:41:36 2023	GTM/In-use: 61.0000/49.9860 MB
+
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.145e-11,-3.435e-11)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.435e-11,-5.725e-11)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (8.015e-11,-1.0305e-10)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.7175e-10,-1.9465e-10)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.5495e-10,-3.7785e-10)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (7.2135e-10,-7.4425e-10)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.45415e-09,-1.47705e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.91975e-09,-2.94265e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.85095e-09,-5.87385e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.17133e-08,-1.17363e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.34381e-08,-2.34611e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (4.68877e-08,-4.69107e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (9.37869e-08,-9.38099e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.87585e-07,-1.87608e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.75182e-07,-3.75205e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (7.50376e-07,-7.50399e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.50076e-06,-1.50079e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.00154e-06,-3.00156e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (6.00309e-06,-6.00311e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.20062e-05,-1.20062e-05)
+
+ **warning** Both end of window has same sign.
+
+ removal =    failed       
+ sis_passlist =    failed
+ sis_faillist_check =    failed
+  **info** multiple results used in passfail
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (8.94556e-10,4.70282e-10)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.10669e-09,2.58145e-10)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.53097e-09,-1.66129e-10)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.37951e-09,-1.01468e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (4.07661e-09,-2.71177e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (7.4708e-09,-6.10596e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.42592e-08,-1.28943e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.78359e-08,-2.64711e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.49895e-08,-5.36246e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.09297e-07,-1.07932e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.17911e-07,-2.16546e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (4.35139e-07,-4.33774e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (8.69595e-07,-8.6823e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.73851e-06,-1.73714e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.47633e-06,-3.47497e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (6.95198e-06,-6.95062e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.39033e-05,-1.39019e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.78059e-05,-2.78045e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.56111e-05,-5.56097e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000111222,-0.00011122)
+
+ **warning** Both end of window has same sign.
+
+ removal =    failed       
+ sis_passlist =    failed
+ sis_faillist_check =    failed
+  **info** multiple results used in passfail
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.99445e-09,2.24165e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (4.87085e-09,1.36525e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (6.62365e-09,-3.8755e-10)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.01293e-08,-3.89315e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.71405e-08,-1.09044e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.11629e-08,-2.49268e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.92077e-08,-5.29716e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.15297e-07,-1.09061e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.27476e-07,-2.2124e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (4.51835e-07,-4.45599e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (9.00552e-07,-8.94316e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.79799e-06,-1.79175e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.59285e-06,-3.58662e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (7.18259e-06,-7.17635e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.43621e-05,-1.43558e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.8721e-05,-2.87148e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.74389e-05,-5.74326e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000114875,-0.000114868)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000229746,-0.00022974)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000459489,-0.000459483)
+
+ **warning** Both end of window has same sign.
+
+ removal =    failed       
+ sis_passlist =    failed
+ sis_faillist_check =    failed
+  **info** multiple results used in passfail
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (-6.82419e-10,-1.10669e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (-4.70282e-10,-1.31883e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (-4.60079e-11,-1.7431e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (8.0254e-10,-2.59165e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.49963e-09,-4.28875e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.89383e-09,-7.68294e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.26822e-08,-1.44713e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.6259e-08,-2.80481e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.34125e-08,-5.52016e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.0772e-07,-1.09509e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.16334e-07,-2.18123e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (4.33562e-07,-4.35351e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (8.68018e-07,-8.69807e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.73693e-06,-1.73872e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.47476e-06,-3.47655e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (6.95041e-06,-6.9522e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.39017e-05,-1.39035e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.78043e-05,-2.78061e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.56095e-05,-5.56113e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.00011122,-0.000111222)
+
+ **warning** Both end of window has same sign.
+
+ removal =    failed       
+ sis_passlist =    failed
+ sis_faillist_check =    failed
+  **info** multiple results used in passfail
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.00687e-10,-6.02061e-10)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (6.02061e-10,-1.00343e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.40481e-09,-1.80618e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.0103e-09,-3.41168e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (6.22129e-09,-6.62267e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.26433e-08,-1.30446e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.54872e-08,-2.58886e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.11752e-08,-5.15765e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.02551e-07,-1.02952e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.05303e-07,-2.05704e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (4.10806e-07,-4.11207e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (8.21813e-07,-8.22214e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.64383e-06,-1.64423e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.28785e-06,-3.28825e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (6.57591e-06,-6.57631e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.3152e-05,-1.31524e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.63042e-05,-2.63046e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.26087e-05,-5.26091e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000105218,-0.000105218)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000210435,-0.000210436)
+
+ **warning** Both end of window has same sign.
+
+ removal =    failed       
+ sis_passlist =    failed
+ sis_faillist_check =    failed
+  **info** multiple results used in passfail
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.30058e-09,1.16931e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (4.36622e-09,1.03671e-10)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (6.49749e-09,-2.0276e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.076e-08,-6.29015e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.92851e-08,-1.48152e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.63353e-08,-3.18654e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (7.04357e-08,-6.59658e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.38636e-07,-1.34167e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.75038e-07,-2.70568e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.47841e-07,-5.43371e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.09345e-06,-1.08898e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.18466e-06,-2.18019e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (4.36708e-06,-4.36261e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (8.73193e-06,-8.72746e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.74616e-05,-1.74572e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.4921e-05,-3.49166e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (6.98398e-05,-6.98353e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000139677,-0.000139673)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000279353,-0.000279348)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000558703,-0.000558698)
+
+ **warning** Both end of window has same sign.
+
+ removal =    failed       
+ sis_passlist =    failed
+ sis_faillist_check =    failed
+  **info** multiple results used in passfail
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (-3.11805e-09,-4.87085e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (-2.24165e-09,-5.74725e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (-4.8885e-10,-7.50005e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.01675e-09,-1.10056e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.00279e-08,-1.80168e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.40503e-08,-3.20392e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.20951e-08,-6.0084e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.08185e-07,-1.16174e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.20364e-07,-2.28353e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (4.44722e-07,-4.52711e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (8.93439e-07,-9.01428e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.79087e-06,-1.79886e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.58574e-06,-3.59373e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (7.17547e-06,-7.18346e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.43549e-05,-1.43629e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.87139e-05,-2.87219e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.74318e-05,-5.74397e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000114868,-0.000114875)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000229739,-0.000229747)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000459482,-0.00045949)
+
+ **warning** Both end of window has same sign.
+
+ removal =    failed       
+ sis_passlist =    failed
+ sis_faillist_check =    failed
+  **info** multiple results used in passfail
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (-2.23494e-09,-4.36622e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (-1.16931e-09,-5.43186e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (9.61966e-10,-7.56313e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.22451e-09,-1.18257e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.37496e-08,-2.03508e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.07998e-08,-3.7401e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (6.49002e-08,-7.15013e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.33101e-07,-1.39702e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.69502e-07,-2.76104e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.42306e-07,-5.48907e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.08791e-06,-1.09451e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.17912e-06,-2.18572e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (4.36155e-06,-4.36815e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (8.7264e-06,-8.733e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.74561e-05,-1.74627e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.49155e-05,-3.49221e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (6.98343e-05,-6.98409e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000139672,-0.000139678)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000279347,-0.000279354)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000558697,-0.000558704)
+
+ **warning** Both end of window has same sign.
+
+ removal =    failed       
+ sis_passlist =    failed
+ sis_faillist_check =    failed
+  **info** multiple results used in passfail
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (8.6495e-10,-2.59485e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.59485e-09,-4.32475e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (6.05465e-09,-7.78455e-09)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.29742e-08,-1.47041e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.68134e-08,-2.85433e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.44918e-08,-5.62217e-08)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.09849e-07,-1.11579e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.20562e-07,-2.22292e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (4.41989e-07,-4.43719e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (8.84844e-07,-8.86574e-07)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.77055e-06,-1.77228e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (3.54197e-06,-3.5437e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (7.08481e-06,-7.08654e-06)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (1.41705e-05,-1.41722e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (2.83418e-05,-2.83435e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (5.66845e-05,-5.66862e-05)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.00011337,-0.000113372)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000226741,-0.000226742)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000453482,-0.000453484)
+
+ **warning** Both end of window has same sign.
+
+ **info** extend bisection window to (0.000906965,-0.000906967)
+
+ **warning** Both end of window has same sign.
+
+ removal =    failed       
+ sis_passlist =    failed
+ sis_faillist_check =    failed
+ Warning:Failed Transient Data Sweep Occurs 8 times.
+ Failed Transient Data Sweep Index: data = arc_data( 1 2 3 4 5 6 7 8 )
+
+          ***** job aborted
+1****** HSPICE -- O-2018.09-2 linux64 (Oct 18 2018) ******                      
+ ******  
+ .title removal_hbm__r__hl__clk__hl__acq_1
+
+ ****** job statistics summary tnom=  25.000 temp=   0.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: AMD EPYC 7F32 8-Core Processor
+ cpu MHz	: 3692.974
+  
+ OS:
+ Linux version 3.10.0-1160.95.1.el7.x86_64 (mockbuild@x86-vm-39.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Fri Jun 23 08:44:55 EDT 2023
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    32
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =     491 # elements   =    1570
+  # resistors   =     432 # capacitors =    1094 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =      11
+  # curr_srcs   =       0 # diodes     =       1 # bjts        =       0
+  # jfets       =       0 # mosfets    =      32 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.08           1         414
+  transient         15.52      971595      146890       60184 rev=      8762
+  readin             1.27
+  errchk             0.08
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        369.42 megabytes
+           total cpu time           17.11 seconds
+           total elapsed time       22.73 seconds
+           job started at     18:41:30 11/30/2023
+           job ended   at     18:41:52 11/30/2023
+
+

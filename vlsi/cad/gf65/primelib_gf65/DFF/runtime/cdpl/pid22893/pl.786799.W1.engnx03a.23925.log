@@ -1,0 +1,327 @@
+----------------------------------------------------------------------
+PrimeLib version T-2022.03-SP1 (Malibu 2)
+Build date: Apr 12, 2022 13:01:04
+Path: /proj/cad/synopsys/synopsys_2021/primelib/T-2022.03-SP1/linux64/bin/primelib
+Host: engnx03a.utdallas.edu, User: axk220238, PID: 23925 (PPID: 23850)
+CPU: 32 x 3693 MHz, AMD EPYC 7F32 8-Core Processor (2 socket, 16 core)
+Memory: 257 GB RAM (0.8 GB free), 4 GB Swap (3.4 GB free)
+System load average: 3.92, 4.91, 5.16 (20196 processes)
+Directory: /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133
+Command-line: /proj/cad/synopsys/synopsys_2021/primelib/T-2022.03-SP1/linux64/bin/primelib -server /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/runtime/cdpl/pid22893/driver_22893.tcl
+The char directory is /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF
+Warning: Setting of obsolete parameter 'model_ecsm_cin' is ignored. (PAR-27)
+Warning: 2003.12 is no longer supported as a valid value for liberty_flavor. Setting it to 2007.03.
+Loading /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/etc/cell.stat.gz
+Thu Nov 30 18:39:30 CST 2023: Sourcing environment settings
+Warning: Operating condition 'op_cond' already exists, skipped.
+Thu Nov 30 18:39:30 CST 2023: Environment set up done (0 seconds)
+Create and link tmpdir /var/tmp/pl.engnx03a.786799.23850 -> /var/tmp/primelib.engnx03a.utdallas.edu.786799.23925 
+[CDPL] Loading settings for stage: characterization.0
+The char directory is /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF
+Warning: 2003.12 is no longer supported as a valid value for liberty_flavor. Setting it to 2007.03.
+Thu Nov 30 18:39:30 CST 2023: Sourcing environment settings
+Warning: Operating condition 'op_cond' already exists, skipped.
+Thu Nov 30 18:39:30 CST 2023: Environment set up done (0 seconds)
+[CDPL] Done loading settings for stage: characterization.0
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/initialization__ACQ_7.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/initialization__ACQ_7.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::initialization__ACQ_7.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF initialization__ACQ_7 0.1 0.01 6.42 0.8 1 7.29100704193 engnx03a.utdallas.edu 1701391170.55 1701391177.84 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/initialization__ACQ_6.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/initialization__ACQ_6.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::initialization__ACQ_6.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF initialization__ACQ_6 0.04 0.01 6.27 0.69 1 6.9630959034 engnx03a.utdallas.edu 1701391177.84 1701391184.81 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/initialization__ACQ_4.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/initialization__ACQ_4.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::initialization__ACQ_4.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF initialization__ACQ_4 0.04 0.0 6.35 0.76 1 7.11840391159 engnx03a.utdallas.edu 1701391184.81 1701391191.93 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/initialization__ACQ_5.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/initialization__ACQ_5.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::initialization__ACQ_5.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF initialization__ACQ_5 0.07 0.01 6.25 0.75 1 7.02372598648 engnx03a.utdallas.edu 1701391191.93 1701391198.95 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/removal_hbm__R__hl__CLK__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+Host engnx03a.utdallas.edu load average 4.45 (1min) 4.87 (5min) 5.14 (15min)
+Error:   Simulation removal_hbm__R__hl__CLK__hl__ACQ_1.sif for cell DFF failed: Bad return code (rc=1) from 'hspice exited with code 1: >error          ***** hspice job aborted'. (SC-24) (SMSC-95)
+----------------------
+__recordTaskStats__ DFF removal_hbm__R__hl__CLK__hl__ACQ_1 0.1 0.02 22.25 0.95 1 23.6014311314 engnx03a.utdallas.edu 1701391198.95 1701391222.55 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/recover_hbm__R__hl__CLK__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/recover_hbm__R__hl__CLK__hl__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::recover_hbm__R__hl__CLK__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF recover_hbm__R__hl__CLK__hl__ACQ_1 0.07 0.01 11.8 0.9 1 12.852355957 engnx03a.utdallas.edu 1701391222.55 1701391235.41 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/initialization__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/initialization__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::initialization__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF initialization__ACQ_1 0.05 0.01 6.32 0.78 1 7.13571810722 engnx03a.utdallas.edu 1701391235.41 1701391242.54 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/initialization__ACQ_2.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/initialization__ACQ_2.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::initialization__ACQ_2.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF initialization__ACQ_2 0.04 0.01 6.41 0.78 1 7.19811701775 engnx03a.utdallas.edu 1701391242.54 1701391249.74 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/initialization__ACQ_3.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/initialization__ACQ_3.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::initialization__ACQ_3.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF initialization__ACQ_3 0.05 0.0 6.24 0.77 1 7.02128386497 engnx03a.utdallas.edu 1701391249.74 1701391256.76 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/setup_hbm__D__lh__CLK__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/setup_hbm__D__lh__CLK__hl__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::setup_hbm__D__lh__CLK__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF setup_hbm__D__lh__CLK__hl__ACQ_1 0.06 0.01 11.7 0.93 1 12.7112629414 engnx03a.utdallas.edu 1701391256.76 1701391269.48 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/setup_hbm__D__hl__CLK__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/setup_hbm__D__hl__CLK__hl__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::setup_hbm__D__hl__CLK__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF setup_hbm__D__hl__CLK__hl__ACQ_1 0.06 0.01 11.43 0.89 1 12.3865220547 engnx03a.utdallas.edu 1701391269.48 1701391281.86 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/ncmpw_hbm__CLK__lh__CLK__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/ncmpw_hbm__CLK__lh__CLK__hl__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::ncmpw_hbm__CLK__lh__CLK__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF ncmpw_hbm__CLK__lh__CLK__hl__ACQ_1 0.05 0.01 7.17 0.78 1 7.98181390762 engnx03a.utdallas.edu 1701391281.86 1701391289.85 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/removal_hbm__R__hl__CLK__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+Host engnx03a.utdallas.edu load average 5.34 (1min) 4.84 (5min) 5.09 (15min)
+Error:   Simulation removal_hbm__R__hl__CLK__hl__ACQ_1.sif for cell DFF failed: Bad return code (rc=1) from 'hspice exited with code 1: >error          ***** hspice job aborted'. (SC-24) (SMSC-95)
+----------------------
+__recordTaskStats__ DFF removal_hbm__R__hl__CLK__hl__ACQ_1 0.11 0.01 21.96 0.95 1 23.5288779736 engnx03a.utdallas.edu 1701391289.85 1701391313.38 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/cmpw_hbm__CLK__hl__CLK__lh__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/cmpw_hbm__CLK__hl__CLK__lh__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::cmpw_hbm__CLK__hl__CLK__lh__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF cmpw_hbm__CLK__hl__CLK__lh__ACQ_1 0.06 0.0 6.69 0.8 1 7.54490303993 engnx03a.utdallas.edu 1701391313.38 1701391320.92 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/hold_hbm__D__hl__CLK__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/hold_hbm__D__hl__CLK__hl__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::hold_hbm__D__hl__CLK__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF hold_hbm__D__hl__CLK__hl__ACQ_1 0.06 0.01 11.23 0.89 1 12.1700389385 engnx03a.utdallas.edu 1701391320.92 1701391333.09 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/cmpw_hbm__R__lh__R__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/cmpw_hbm__R__lh__R__hl__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::cmpw_hbm__R__lh__R__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF cmpw_hbm__R__lh__R__hl__ACQ_1 0.05 0.01 6.83 0.83 1 7.66549682617 engnx03a.utdallas.edu 1701391333.09 1701391340.76 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/hold_hbm__D__lh__CLK__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/hold_hbm__D__lh__CLK__hl__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::hold_hbm__D__lh__CLK__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF hold_hbm__D__lh__CLK__hl__ACQ_1 0.06 0.0 11.2 0.88 1 12.1210329533 engnx03a.utdallas.edu 1701391340.76 1701391352.88 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/delay__CLK__hl__Q__lh__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/delay__CLK__hl__Q__lh__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::delay__CLK__hl__Q__lh__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF delay__CLK__hl__Q__lh__ACQ_1 0.06 0.01 7.33 0.81 1 8.22624897957 engnx03a.utdallas.edu 1701391352.88 1701391361.11 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/delay__R__lh__Q__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/delay__R__lh__Q__hl__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::delay__R__lh__Q__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF delay__R__lh__Q__hl__ACQ_1 0.06 0.0 7.34 0.75 1 8.11623382568 engnx03a.utdallas.edu 1701391361.11 1701391369.22 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/delay__CLK__hl__Q__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/delay__CLK__hl__Q__hl__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::delay__CLK__hl__Q__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF delay__CLK__hl__Q__hl__ACQ_1 0.06 0.01 7.51 0.77 1 8.3023018837 engnx03a.utdallas.edu 1701391369.22 1701391377.53 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGDFF: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 1.0
+Loading information for cell DFF
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 501.0 ...
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGDFF: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 501.0
+Loading information for cell DFF
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 1001.0 ...
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGDFF: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 1001.0
+Loading information for cell DFF
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 1501.0 ...
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGDFF: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 1501.0
+Loading information for cell DFF
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 2001.0 ...
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGDFF: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 2001.0
+Loading information for cell DFF
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 2501.0 ...
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGDFF: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 2501.0
+Loading information for cell DFF
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 3001.0 ...
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGDFF: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 3001.0
+Loading information for cell DFF
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 3501.0 ...
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGDFF: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 3501.0
+Loading information for cell DFF
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 4001.0 ...
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGDFF: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 4001.0
+Loading information for cell DFF
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 4501.0 ...
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/leakage_power__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGDFF: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 4501.0
+----------------------
+__recordTaskStats__ DFF leakage_power__ACQ_1 0.55 0.09 67.61 7.67 1 75.6274139881 engnx03a.utdallas.edu 1701391377.53 1701391453.15 1
+__recordTaskStats__ DFF leakage_power__ACQ_1 0.55 0.09 67.61 7.67 1 75.6279129982 engnx03a.utdallas.edu 1701391377.53 1701391453.15 1
+__recordTaskStats__ DFF leakage_power__ACQ_1 0.55 0.09 67.61 7.67 1 75.6284430027 engnx03a.utdallas.edu 1701391377.53 1701391453.15 1
+__recordTaskStats__ DFF leakage_power__ACQ_1 0.55 0.09 67.61 7.67 1 75.6289439201 engnx03a.utdallas.edu 1701391377.53 1701391453.16 1
+__recordTaskStats__ DFF leakage_power__ACQ_1 0.55 0.09 67.61 7.67 1 75.6294510365 engnx03a.utdallas.edu 1701391377.53 1701391453.16 1
+__recordTaskStats__ DFF leakage_power__ACQ_1 0.55 0.09 67.61 7.67 1 75.6299288273 engnx03a.utdallas.edu 1701391377.53 1701391453.16 1
+__recordTaskStats__ DFF leakage_power__ACQ_1 0.56 0.09 67.61 7.67 1 75.6304059029 engnx03a.utdallas.edu 1701391377.53 1701391453.16 1
+__recordTaskStats__ DFF leakage_power__ACQ_1 0.56 0.09 67.61 7.67 1 75.6309268475 engnx03a.utdallas.edu 1701391377.53 1701391453.16 1
+__recordTaskStats__ DFF leakage_power__ACQ_1 0.56 0.09 67.61 7.67 1 75.6314179897 engnx03a.utdallas.edu 1701391377.53 1701391453.16 1
+__recordTaskStats__ DFF leakage_power__ACQ_1 0.56 0.09 67.61 7.67 1 75.6318838596 engnx03a.utdallas.edu 1701391377.53 1701391453.16 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/Cin__D__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/Cin__D__hl__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::Cin__D__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF Cin__D__hl__ACQ_1 0.05 0.01 6.22 0.76 1 6.99134588242 engnx03a.utdallas.edu 1701391453.16 1701391460.15 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/Cin__D__lh__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/Cin__D__lh__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::Cin__D__lh__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF Cin__D__lh__ACQ_1 0.04 0.0 5.94 0.73 1 6.66985797882 engnx03a.utdallas.edu 1701391460.15 1701391466.82 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/Cin__VSS__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/Cin__VSS__hl__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::Cin__VSS__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF Cin__VSS__hl__ACQ_1 0.05 0.02 6.39 0.73 1 7.13419604301 engnx03a.utdallas.edu 1701391466.82 1701391473.96 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/Cin__VSS__lh__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/Cin__VSS__lh__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::Cin__VSS__lh__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF Cin__VSS__lh__ACQ_1 0.05 0.0 6.22 0.75 1 6.97934007645 engnx03a.utdallas.edu 1701391473.96 1701391480.94 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/Cin__CLK__lh__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/Cin__CLK__lh__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::Cin__CLK__lh__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF Cin__CLK__lh__ACQ_1 0.05 0.01 6.31 0.82 1 7.1562640667 engnx03a.utdallas.edu 1701391480.94 1701391488.09 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/Cin__VDD__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/Cin__VDD__hl__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::Cin__VDD__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF Cin__VDD__hl__ACQ_1 0.05 0.01 6.1 0.74 1 6.91696691513 engnx03a.utdallas.edu 1701391488.09 1701391495.01 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/Cin__VDD__lh__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/Cin__VDD__lh__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::Cin__VDD__lh__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF Cin__VDD__lh__ACQ_1 0.05 0.01 6.22 0.71 1 6.94660496712 engnx03a.utdallas.edu 1701391495.01 1701391501.96 1
+Loading information for cell DFF
+work dir: '/var/tmp/primelib.engnx03a.786799.23925/DFF/Cin__R__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.786799.23925/DFF/Cin__R__hl__ACQ_1.sof.gz to /home/eng/a/axk220238/vlsi/cad/gf65/primelib_gf65_axk220238_axk230133/DFF/results/DFF
+Simulation DFF::Cin__R__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ DFF Cin__R__hl__ACQ_1 0.06 0.01 6.3 0.82 1 7.15431499481 engnx03a.utdallas.edu 1701391501.96 1701391509.11 1
+Warning: /var/tmp/worker.786799.W1.engnx03a.utdallas.edu.23925.log: No such file or directory
+   [CDPL] Shutting down worker
+Thu Nov 30 18:45:20 2023: Program time: 350.00 seconds | 5.83 minutes | 0.10 hours
+CDPL worker exited normally.
+Reset log file
+Maximum virtual memory size: 1046.5 MB
